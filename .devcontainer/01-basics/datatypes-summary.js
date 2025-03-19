@@ -35,3 +35,36 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//stack(permitive),heap(refrence) 
+
+//heap(directly give values from the reference memory or change directly from the reference memory)
+//stack(only give the address of the reference memory, and give the copy value from  the memory)
+
+
+let myYoutubename ="shivamjhadotcom"
+
+let anothername = myYoutubename
+
+anothername ="chaiaurcode"
+
+console.log(anothername);
+console.log(myYoutubename);
+
+
+let userOne ={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+let userTwo= userOne
+
+userTwo.email="shivam@google.com"
+
+
+console.log(userOne.email);
+console.log(userTwo.email);
